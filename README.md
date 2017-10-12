@@ -7,7 +7,7 @@ Um projeto será desenvolvido em grupos de, **no máximo**, 3 estudantes que pod
 A escolha do projeto que o grupo de estudantes desenvolverá é determinado pela soma do último dígito do RA (número de matrícula) de cada membro do grupo. Se a soma desses dígitos resultar em um número ímpar, então o grupo deve fazer o [Projeto 1](#projeto-1); se resultar em um número par, o grupo deverá fazer o [Projeto 2](#projeto-2).
 
 ### Entrega dos projetos
-Os resultados dos projetos devem ser entregues até as **23h55 do dia da aula anterior à aula da 2ª prova**. Esses resultados e toda a documentação devem estar em um repositório no [GitHub](https://github.com).
+Os resultados dos projetos devem ser entregues até as **23h55 do dia da aula anterior à aula da 2ª prova**. Esses resultados e toda a documentação devem estar em um repositório no [GitHub](https://github.com) ou no [BitBucket](http://bitbucket.org).
 
 Os estudantes devem fornecer as seguintes informações até a 3ª (terceira) aula por email -- exclusivamente -- com o seguinte conteúdo:
 * Assunto do email: "[TT304] Definição da equipe para projeto de SO"
@@ -15,10 +15,19 @@ Os estudantes devem fornecer as seguintes informações até a 3ª (terceira) au
 * Nome de cada um dos componentes do grupo e seus respectivos números de matrícula.
 * Projeto a ser desenvolvido (1 ou 2).
 
-**IMPORTANTE**: A definição dos componentes da equipe deve acontecer até a 3ª semana letiva de aula. Após esse prazo, para cada semana de atraso na definição de equipes será descontado um ponto na nota do trabalho de cada aluno.
+_**IMPORTANTE**_: A definição dos componentes da equipe deve acontecer até a 3ª semana letiva de aula. Após esse prazo, para cada semana de atraso na definição de equipes será descontado um ponto na nota do trabalho de cada aluno.
 
-### Plágio:
+### Plágio
 _**O plágio é condenável!**_ Qualquer forma de plágio, independentemente da quantidade de linhas, acarretará em zero no item de avaliação em que foi detectado o plágio para todos os envolvidos, sem distinção entre plagiador e plagiado.
+
+### Detalhamento dos produtos do projeto
+Os produtos que devem ser entregues como resultado do projeto são os seguintes:
+1. O código fonte do programa completo, documentado e pronto para ser compilado em sistemas Linux.
+2. Um relatório contendo a descrição da solução do problema (algoritmo em alto nível); gráficos com os tempos de execução do programa para 2, 4, 8 e 16 threads; e as conclusões a respeito dos resultados obtidos.
+
+Para o item (1), a sugestão é a utilização de um _Makefile_ que facilite a compilação em sistemas Linux. Utilize também o comando _time_ (do Linux) para calcular o tempo total de execução. Para o item (2), o relatório deve estar no formato PDF ou disponível no próprio servidor Git usando um arquivo na sintaxe Markdown. Outros formatos não serão aceitos.
+
+A falta de qualquer um dos itens acarretará em nota zero nesse componente de avaliação.
 
 ## Projeto 1
 Esse é o projeto 1
