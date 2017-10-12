@@ -4,7 +4,7 @@ Este é o repositório padrão para a disciplina Sistemas Operacionais, oferecid
 ## Informações gerais sobre os projetos
 Um projeto será desenvolvido em grupos de, **no máximo**, 3 estudantes que podem se agrupar livremente. São dois os projetos propostos na disciplina. 
 
-A escolha do projeto que o grupo de estudantes desenvolverá é determinado pela soma do último dígito do RA (número de matrícula) de cada membro do grupo. Se a soma desses dígitos resultar em um número ímpar, então o grupo deve fazer o [Projeto 1](#projeto-1); se resultar em um número par, o grupo deverá fazer o [Projeto 2](#projeto-2).
+A escolha do projeto que o grupo de estudantes desenvolverá é determinado pela soma do último dígito do RA (número de matrícula) de cada membro do grupo. Se a soma desses dígitos resultar em um número ímpar, então o grupo deve fazer o [Projeto 1](Projeto1.md); se resultar em um número par, o grupo deverá fazer o [Projeto 2](Projeto2.md).
 
 ### Entrega dos projetos
 Os resultados dos projetos devem ser entregues até as **23h55 do dia da aula anterior à aula da 2ª prova**. Esses resultados e toda a documentação devem estar em um repositório no [GitHub](https://github.com) ou no [BitBucket](http://bitbucket.org).
@@ -29,9 +29,3 @@ Para o item (1), a sugestão é a utilização de um _Makefile_ que facilite a c
 
 A falta de qualquer um dos itens acarretará em nota zero nesse componente de avaliação.
 
-## Projeto 1
-Esse é o projeto 1
-
-
-## Projeto 2
-Esse é o projeto 2
