@@ -18,7 +18,7 @@ Os estudantes devem fornecer as seguintes informações até a 3ª (terceira) au
 _**IMPORTANTE**_: A definição dos componentes da equipe deve acontecer até a 3ª semana letiva de aula. Após esse prazo, para cada semana de atraso na definição de equipes será descontado um ponto na nota do trabalho de cada aluno.
 
 ### Plágio
-_**O plágio é condenável!**_  :no_entry_sign: Qualquer forma de plágio, independentemente da quantidade de linhas, acarretará em zero no item de avaliação em que foi detectado o plágio para todos os envolvidos, sem distinção entre plagiador e plagiado.
+:no_entry_sign: _**O plágio é condenável!**_: Qualquer forma de plágio, independentemente da quantidade de linhas, acarretará em zero no item de avaliação em que foi detectado o plágio para todos os envolvidos, sem distinção entre plagiador e plagiado.
 
 ### Detalhamento dos produtos do projeto
 Os produtos que devem ser entregues como resultado do projeto são os seguintes:
@@ -33,5 +33,5 @@ A falta de qualquer um dos itens acarretará em nota zero nesse componente de av
 
 ## Projetos
 A breve descrição dos projetos está a seguir. Clique nos projetos para ir direto às respectivas descrições:
-* [Projeto 1](Projeto1.md):
-* [Projeto 2](Projeto2.md):
+* [Projeto 1](Projeto1.md): Filtro Passa-baixa
+* [Projeto 2](Projeto2.md): Binarização de imagens
