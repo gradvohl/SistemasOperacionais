@@ -27,7 +27,7 @@ Todo o código fonte documentado, o relatório e a documentação do projeto dev
 
 Para o item (1), a sugestão é a utilização de um _Makefile_ que facilite a compilação em sistemas Linux. Utilize também o comando _time_ (do Linux) para calcular o tempo total de execução.
 
-Para o item (2), sugere-se o uso dos programas para capturar a tela do computador e criar vídeos.
+Para o item (2), sugere-se o uso dos programas para capturar a tela do computador e criar vídeos, como o [SimpleScreenRecorder](http://www.maartenbaert.be/simplescreenrecorder).
 
 Para o item (3), o relatório deve estar no formato PDF ou disponível no próprio servidor Git usando um arquivo na sintaxe Markdown. Outros formatos não serão aceitos.
 
