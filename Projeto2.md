@@ -19,7 +19,7 @@ Os produtos que devem ser entregues como resultado do projeto são os seguintes:
 
 Todo o código fonte documentado, o relatório e a documentação do projeto devem estar disponíveis no repositório Git. No Moodle da disciplina, deve ser publicado apenas o relatório em PDF e neste relatório deve constar o endereço do repositório Git.
 
-Para o item (1), a sugestão é a utilização de um Makefile que facilite a compilação em sistemas Linux. Utilize também o comando time (do Linux) para calcular o tempo total de execução.
+Para o item (1), a sugestão é a utilização de um _makefile_ que facilite a compilação em sistemas Linux. Utilize também o comando time (do Linux) para calcular o tempo total de execução.
 
 Para o item (2), sugere-se o uso dos programas para capturar a tela do computador e criar vídeos, como o [SimpleScreenRecorder](http://www.maartenbaert.be/simplescreenrecorder).
 
