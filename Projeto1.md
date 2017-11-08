@@ -4,7 +4,7 @@ Este projeto visa a criação de um programa que utilize múltiplas *threads* pa
 
 O programa deverá ser escrito para o sistema operacional Linux e obrigatoriamente utilizar a biblioteca POSIX Threads.
 
-##Descrição do problema a ser resolvido
+## Descrição do problema a ser resolvido
 Considere uma matriz M x N (M linhas, N colunas) que contém valores em ponto flutuante, positivos ou negativos. O programa deverá utilizar múltiplos *threads* para encontrar um determinado valor nessa matriz.
 
 O programa deverá considerar os seguintes fatos:

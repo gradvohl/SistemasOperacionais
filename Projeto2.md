@@ -2,7 +2,7 @@
 ## Objetivo
 Este projeto visa a criação de um programa que utilize múltiplas threads para ordenar um vetor com N elementos (N > 99999) e a análise do desempenho desse programa com 2, 4, 8 e 16 threads. O programa deverá ser escrito para o sistema operacional Linux e obrigatoriamente utilizar a biblioteca POSIX Threads.
 
-##Descrição do problema a ser resolvido
+## Descrição do problema a ser resolvido
 Considere um vetor com N posições (N > 99999) que contém valores reais. O programa deverá ordenar esse vetor, com qualquer algoritmo de ordenação rápido. Por algoritmo rápido, entende-se um algoritmo de Ordem O(n x log n) ou melhor. Exemplo de algoritmos de ordem O(n x log n) são _Mergesort_, _Quicksort_, _Heapsort_.
 
 ## Entradas e saídas de valores para o programa
