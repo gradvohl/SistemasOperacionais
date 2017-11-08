@@ -9,15 +9,18 @@
 CC=gcc
 #
 # Arquivos fonte
-FONTES=generateRandomMatrix.c MatrixIO.c
+FONTES=generateRandomMatrix.c generateRandomMatrixDouble.c MatrixIO.c
 OBJETOS=$(FONTES:.c=.o)
-EXECUTAVEL=generateRandomMatrix
+EXECUTAVEL=generateRandomMatrix generateRandomMatrixDouble
 
 #Dependencias de Compilacao
 all: $(EXECUTAVEL)
 
 generateRandomMatrix: generateRandomMatrix.o MatrixIO.o
 	$(CC) MatrixIO.o generateRandomMatrix.o -o generateRandomMatrix
+
+generateRandomMatrixDouble: generateRandomMatrixDouble.o MatrixIO.o
+	$(CC) MatrixIO.o generateRandomMatrixDouble.o -o generateRandomMatrixDouble
 
 MatrixIO.o: MatrixIO.c MatrixIO.h
 	$(CC) -c MatrixIO.c
