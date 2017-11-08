@@ -59,10 +59,10 @@ int main (int argc, char **argv)
      case 0:
      case 1:
      case 2:
-         fprintf(stderr, "Uso:\n\t %s <number of lines> <number of colums>\n or", argv[0]);
-         fprintf(stderr, "\n\t %s <number of lines> <number of colums> <output file>\n or", argv[0]);
-         fprintf(stderr, "\n\t %s <number of lines> <number of colums> <lower limit> <upper limit>\n or", argv[0]);
-         fprintf(stderr, "\n\t %s <number of lines> <number of colums> <lower limit> <upper limit> <output file>\n", argv[0]);
+         fprintf(stderr, "Uso:\n\t %s <numero de linhas> <numero de colunas>\n or", argv[0]);
+         fprintf(stderr, "\n\t %s <numero de linhas> <numero de colunas> <output file>\n or", argv[0]);
+         fprintf(stderr, "\n\t %s <numero de linhas> <numero de colunas> <minimo> <maximo>\n or", argv[0]);
+         fprintf(stderr, "\n\t %s <numero de linhas> <numero de colunas> <minimo> <maximo> <arquivo de saida>\n", argv[0]);
 
          exit(EXIT_FAILURE);
          break;
@@ -73,7 +73,7 @@ int main (int argc, char **argv)
          upperLimit = (lines*columns);
          fileName = NULL;
 
-         fprintf(stdout, "Generating %d, %d matrix, without values limits to stdout\n", lines, columns);
+         fprintf(stdout, "Gerando uma matriz %d x %d sem valores limites para a saida padrao.\n", lines, columns);
          break;
      case 4:
          lines = atoi(argv[1]);
@@ -82,7 +82,7 @@ int main (int argc, char **argv)
          upperLimit = (lines*columns);
          fileName = argv[3];
 
-         fprintf(stdout, "Generating %d, %d matrix, without values limits to %s\n", lines, columns, fileName);
+         fprintf(stdout, "Gerando uma matriz %d x %d sem valores limites para o arquivo %s\n", lines, columns, fileName);
          break;
      case 5:
          lines = atoi(argv[1]);
@@ -91,7 +91,7 @@ int main (int argc, char **argv)
          upperLimit = atoi(argv[4]);
          fileName = NULL;
 
-         fprintf(stdout, "Generating %d, %d matrix, with values [%ld, %ld] to stdout\n", 
+         fprintf(stdout, "Gerando uma matriz %d x %d com os limites [%ld, %ld] para a saida padrao\n", 
                           lines, columns, lowerLimit, upperLimit);
          break;
 
@@ -102,7 +102,7 @@ int main (int argc, char **argv)
         upperLimit = atoi(argv[4]);
         fileName = argv[5];
 
-        fprintf(stdout, "Generating %d, %d matrix, with values [%ld, %ld] to file %s\n",
+        fprintf(stdout, "Gerando uma matriz %d x %d com os limites [%ld, %ld] para o arquivo %s\n",
                                  lines, columns, lowerLimit, upperLimit, fileName);
         break;
  }
