@@ -15,7 +15,7 @@ O programa deverá considerar os seguintes fatos:
 ## Entradas e saídas de valores para o programa
 **Entradas**: os valores M, N, T, V -- respectivamente, número de linhas; número de colunas; número de threads; e o valor a ser buscado -- devem ser informados pelo usuário no início do programa, bem como o arquivo onde estão os dados (valores) da matriz. Para os testes, considere valores grandes (maiores ou iguais a 100) para M e N.
 
-**Saídas**: as posições (linha e coluna) onde está cada elemento encontrado; ou uma mensagem informando que o elemento não foi encontrado, 
+**Saídas**: as posições (linha e coluna) onde está cada elemento encontrado, ordenadas de acordo com a posição na matriz; ou uma mensagem informando que o elemento não foi encontrado, 
 
 ### Detalhamento dos produtos do projeto
 Os produtos que devem ser entregues como resultado do projeto são os seguintes:
