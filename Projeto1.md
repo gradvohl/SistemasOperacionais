@@ -1,21 +1,34 @@
-# Projeto 1 -- "Localiza na Matriz"
+# Projeto 1 -- "Divide Matriz"
 ## Objetivo
-Este projeto visa a criação de um programa que utilize múltiplas *threads* para procurar um determinado valor em uma matriz M x N (com M linhas e N colunas) e a análise do desempenho desse programa com 2, 4, 8 e 16 *threads*. 
+Este projeto visa a criação de um programa que utilize múltiplas threads para dividir uma matriz N x N (N linhas por N colunas) em outras duas matrizes também N x N de tal forma que seja composta por elementos a partir da diagonal principal e acima; e a segunda matriz com elementos abaixo da diagonal principal.
 
 O programa deverá ser escrito para o sistema operacional Linux e obrigatoriamente utilizar a biblioteca POSIX Threads.
 
 ## Descrição do problema a ser resolvido
-Considere uma matriz M x N (M linhas, N colunas) que contém valores em ponto flutuante, positivos ou negativos. O programa deverá utilizar múltiplos *threads* para encontrar um determinado valor nessa matriz.
+Considere uma matriz N x N (N linhas por N colunas) que contém valores em ponto flutuante, positivos ou negativos. O programa deverá utilizar múltiplos threads para dividir essa matriz em outras duas conforme ilustrado na figura a seguir.
 
-O programa deverá considerar os seguintes fatos:
-* A matriz contém números reais, aleatórios, não ordenados.
-* A matriz pode ter valores repetidos. Nesse caso, todas as posições em que o elemento ocorrer devem ser apontadas na saída do programa.
-* Pode ser que o elemento não conste da matriz.
+A matriz original deve ser dividida em outras duas matrizes também N x N de tal forma que a primeira matriz seja composta por elementos a partir da diagonal principal e acima; e a segunda matriz com elementos abaixo da diagonal principal.
+
+Os dados da matriz original devem vir de um arquivo e as matrizes resultantes devem ser gravadas em arquivos com as extensões diag1 para os dados da primeira matriz e diag2 para os dados da segunda matriz.
+
+O programa deve ser testado para 2, 4, 8 e 16 threads, com matrizes 1000 x 1000.
 
 ## Entradas e saídas de valores para o programa
-**Entradas**: os valores M, N, T, V -- respectivamente, número de linhas; número de colunas; número de threads; e o valor a ser buscado -- devem ser informados pelo usuário no início do programa, bem como o arquivo onde estão os dados (valores) da matriz. Para os testes, considere valores grandes (maiores ou iguais a 100) para M e N.
+**Entradas**: os valores N, T e Arquivo -- respectivamente, as dimensões da matriz (N x N); o número de threads; e o arquivo onde estão os dados -- devem ser informados pelo usuário no início do programa. Para os testes, considere valores grandes (maiores ou iguais a 100) para N.
 
-**Saídas**: as posições (linha e coluna) onde está cada elemento encontrado, ordenadas de acordo com a posição na matriz; ou uma mensagem informando que o elemento não foi encontrado, 
+**Saídas**: Arquivos com as matrizes diagonal superior e diagonal inferior. Os arquivos gerados devem ter o mesmo nome do arquivo original e as extensões diag1 para a primeira matriz e diag2 para a segunda matriz.
+
+Como sugestão, construa o programa de modo que os valores de entrada sejam lidos da linha de comando. Por exemplo:
+
+```
+./divideMat 1000 16 matriz.dat
+```
+
+Onde:
+*	./divideMat é o nome do programa; 
+*	1000 é a dimensão da matriz (1000 x 1000);  
+*	16 é o número de threads; e 
+*	matriz.dat é o arquivo que contém os dados da matriz.
 
 ### Detalhamento dos produtos do projeto
 Os produtos que devem ser entregues como resultado do projeto são os seguintes:
@@ -32,4 +45,3 @@ Para o item (2), sugere-se o uso dos programas para capturar a tela do computado
 Para o item (3), o relatório deve estar no formato PDF ou disponível no próprio servidor Git usando um arquivo na sintaxe Markdown. Outros formatos não serão aceitos.
 
 A falta de qualquer um dos itens acarretará em nota zero nesse componente de avaliação.
-
