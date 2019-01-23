@@ -1,14 +1,31 @@
-# Projeto 2 -- “Ordenação de Alto Desempenho"
+# Projeto 2 -- “Rotaciona Matriz"
 ## Objetivo
-Este projeto visa a criação de um programa que utilize múltiplas threads para ordenar um vetor com N números reais (N > 99999) e a análise do desempenho desse programa com 2, 4, 8 e 16 threads. O programa deverá ser escrito para o sistema operacional Linux e obrigatoriamente utilizar a biblioteca POSIX Threads.
+Este projeto visa a criação de um programa que utilize múltiplas threads para rotacionar uma matriz N x M (N linhas por M colunas) 90 graus no sentido horário. O programa deverá ser escrito para o sistema operacional Linux e obrigatoriamente utilizar a biblioteca POSIX Threads.
 
 ## Descrição do problema a ser resolvido
-Considere um vetor com N posições (N > 99999) que contém valores reais. O programa deverá ordenar esse vetor, com qualquer algoritmo de ordenação rápido. Por algoritmo rápido, entende-se um algoritmo de Ordem O(n x log n) ou melhor. Exemplo de algoritmos de ordem O(n x log n) são _Mergesort_, _Quicksort_, _Heapsort_.
+Considere uma matriz N x M (N linhas por M colunas) que contém valores em ponto flutuante, positivos ou negativos. O programa deverá utilizar múltiplos threads para rotacionar essa matriz em 90 graus conforme o exemplo ilustrado na figura a seguir para uma matriz 4 x 4.
+
+Os dados da matriz original devem vir de um arquivo e a matriz resultante deve ser gravada em arquivo com a extensão .rot.
+O programa deve ser testado para 2, 4, 8 e 16 threads, com matrizes 1000 x 1000.
 
 ## Entradas e saídas de valores para o programa
-**Entradas**: os valores N (número de elementos no vetor) e T (número de threads) devem ser informados pelo usuário no início do programa, bem como nome do arquivo de onde virão os dados para o vetor e o nome do arquivo de saída. 
+**Entradas**: os valores N, M, T, <Arquivo Entrada> e <Arquivo Saída>  -- respectivamente, as dimensões da matriz (N x M); o número de threads; e o arquivo onde estão os dados de entrada e o arquivo onde devem estar os dados de saída -- devem ser informados pelo usuário no início do programa. Para os testes, considere valores grandes (maiores ou iguais a 100) para N e M.
 
-**Saída**: O vetor ordenado deverá ser gravado em um arquivo com números apenas. O nome do arquivo de saída deve ser informado na entrada do programa. 
+**Saída**: Arquivo com a matriz rotacionada. O arquivo gerado deve ter o mesmo nome do arquivo original com a extensão .rot.
+
+Como sugestão, construa o programa de modo que os valores de entrada sejam lidos da linha de comando. Por exemplo:
+```
+./rotacionaMat 1000 500 16 matriz.dat matriz.rot
+```
+
+Onde:
+*	./rotacionaMat é o nome do programa; 
+*	1000 é o número de linhas da matriz;  
+*	500 é o número de colunas da matriz;
+*	16 é o número de threads; e 
+*	matriz.dat é o arquivo que contém os dados de entrada da matriz.
+*	matriz.rot é o arquivo que contém os dados da matriz rotacionada.
+
 
 ### Detalhamento dos produtos do projeto
 Os produtos que devem ser entregues como resultado do projeto são os seguintes:
