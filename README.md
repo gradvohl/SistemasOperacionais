@@ -38,5 +38,5 @@ A falta de qualquer um dos itens acarretará em nota zero nesse componente de av
 
 ## Projetos
 A breve descrição dos projetos está a seguir. Clique nos projetos para ir direto às respectivas descrições:
-* [Projeto 1](Projeto1.md): Localiza na matriz.
-* [Projeto 2](Projeto2.md): Ordenação de Alto Desempenho
+* [Projeto 1](Projeto1.md): Divide Matriz.
+* [Projeto 2](Projeto2.md): Rotaciona Matriz.
