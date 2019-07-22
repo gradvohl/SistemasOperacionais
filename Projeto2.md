@@ -1,34 +1,28 @@
-# Projeto 2 -- “Rotaciona Matriz"
+# Projeto 2 -- "Build matrix"
 ## Objetivo
-Este projeto visa a criação de um programa que utilize múltiplas threads para rotacionar uma matriz N x M (N linhas por M colunas) 90 graus no sentido horário. O programa deverá ser escrito para o sistema operacional Linux e obrigatoriamente utilizar a biblioteca POSIX Threads.
+Este projeto visa a criação de um programa que utilize múltiplas threads para ler valores inteiros de N arquivos de entrada e armazenar em um único arquivo de saída no formato de matriz (linhas e colunas). O programa deverá ser escrito para o sistema operacional Linux e obrigatoriamente utilizar a biblioteca POSIX Threads.
 
 ## Descrição do problema a ser resolvido
-Considere uma matriz N x M (N linhas por M colunas) que contém valores em ponto flutuante, positivos ou negativos. O programa deverá utilizar múltiplos threads para rotacionar essa matriz em 90 graus conforme o exemplo ilustrado na figura a seguir para uma matriz 4 x 4.
+Considere que existem N arquivos de entrada com diferentes quantidades de valores inteiros que podem ser repetidos ou não. O programa deverá ler os valores inteiros desses vários arquivos e, de forma ordenada, armazená-los em um arquivo de saída no formato de matriz com N linhas (onde N é a quantidade de arquivos) e M colunas (onde M é a maior quantidade de valores entre os N arquivos). As posições da matriz devem ser preenchidas com zero, quando necessário.
 
-![Rotação da Matriz](/figuras/RotacionaMatriz.png)
-
-
-Os dados da matriz original devem vir de um arquivo e a matriz resultante deve ser gravada em arquivo com a extensão .rot.
-O programa deve ser testado para 2, 4, 8 e 16 threads, com matrizes 1000 x 1000.
+O programa deve ser testado para 2, 4, 8 e 16 threads, com arquivos com diferentes quantidades de números inteiros.
 
 ## Entradas e saídas de valores para o programa
-**Entradas**: os valores N, M, T, <Arquivo Entrada> e <Arquivo Saída>  -- respectivamente, as dimensões da matriz (N x M); o número de threads; e o arquivo onde estão os dados de entrada e o arquivo onde devem estar os dados de saída -- devem ser informados pelo usuário no início do programa. Para os testes, considere valores grandes (maiores ou iguais a 100) para N e M.
+**Entradas**: O número de threads que o programa deve utilizar, os nomes dos arquivos de entrada e o nome do arquivo de saída. Para os testes, considere pelo menos 5 arquivos com 1000 valores cada.
 
-**Saída**: Arquivo com a matriz rotacionada. O arquivo gerado deve ter o mesmo nome do arquivo original com a extensão .rot.
+**Saída**: Arquivo com os valores armazenados na forma de uma matriz (N linhas por M colunas).
 
 Como sugestão, construa o programa de modo que os valores de entrada sejam lidos da linha de comando. Por exemplo:
 
 ```shell
-./rotacionaMat 1000 500 16 matriz.dat matriz.rot
+./buildmatrix 4 arq1.dat arq2.dat arq3.dat –o saida.dat
 ```
 
 Onde:
-*	`./rotacionaMat` é o nome do programa; 
-*	`1000` é o número de linhas da matriz;  
-*	`500` é o número de colunas da matriz;
-*	`16` é o número de threads; e 
-*	`matriz.dat` é o arquivo que contém os dados de entrada da matriz.
-*	`matriz.rot` é o arquivo que contém os dados da matriz rotacionada.
+*	`./buildmatrix` é o nome do programa; 
+*	`4` é o número de threads; 
+*	`arq1.dat arq2.dat arq3.dat` são os arquivos de entrada; e 
+*	`-o saida.dat` é o arquivo que contém os dados de saída.
 
 
 ### Detalhamento dos produtos do projeto
