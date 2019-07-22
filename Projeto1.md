@@ -1,36 +1,30 @@
-# Projeto 1 -- "Divide Matriz"
+# Projeto 1 -- "Merge and sort"
 ## Objetivo
-Este projeto visa a criação de um programa que utilize múltiplas threads para dividir uma matriz N x N (N linhas por N colunas) em outras duas matrizes também N x N de tal forma que seja composta por elementos a partir da diagonal principal e acima; e a segunda matriz com elementos abaixo da diagonal principal.
+Este projeto visa a criação de um programa que utilize múltiplas threads para ler valores inteiros de N arquivos de entrada e armazenar em ordem crescente em um único arquivo de saída. Os dados dos arquivos de entrada não estão ordenados.
 
 O programa deverá ser escrito para o sistema operacional Linux e obrigatoriamente utilizar a biblioteca POSIX Threads.
 
 ## Descrição do problema a ser resolvido
-Considere uma matriz N x N (N linhas por N colunas) que contém valores em ponto flutuante, positivos ou negativos. O programa deverá utilizar múltiplos threads para dividir essa matriz em outras duas conforme ilustrado na figura a seguir.
+Considere que existem N arquivos de entrada com diferentes quantidades de valores inteiros não ordenados e que podem ser repetidos ou não. O programa deverá ler os valores inteiros desses vários arquivos e, de forma ordenada, armazená-los em um arquivo de saída.
 
-![Divisão da Matriz](/figuras/DivideMatriz.png)
-
-A matriz original deve ser dividida em outras duas matrizes também N x N de tal forma que a primeira matriz seja composta por elementos a partir da diagonal principal e acima; e a segunda matriz com elementos abaixo da diagonal principal.
-
-Os dados da matriz original devem vir de um arquivo e as matrizes resultantes devem ser gravadas em arquivos com as extensões diag1 para os dados da primeira matriz e diag2 para os dados da segunda matriz.
-
-O programa deve ser testado para 2, 4, 8 e 16 threads, com matrizes 1000 x 1000.
+O programa deve ser testado para 2, 4, 8 e 16 threads, com arquivos com diferentes quantidades de números inteiros.
 
 ## Entradas e saídas de valores para o programa
-**Entradas**: os valores N, T e Arquivo -- respectivamente, as dimensões da matriz (N x N); o número de threads; e o arquivo onde estão os dados -- devem ser informados pelo usuário no início do programa. Para os testes, considere valores grandes (maiores ou iguais a 100) para N.
+**Entradas**: O número de threads que o programa deve utilizar, os nomes dos arquivos de entrada e o nome do arquivo de saída. Para os testes, considere pelo menos 5 arquivos com 1000 valores cada.
 
-**Saídas**: Arquivos com as matrizes diagonal superior e diagonal inferior. Os arquivos gerados devem ter o mesmo nome do arquivo original e as extensões `diag1` para a primeira matriz e `diag2` para a segunda matriz.
+**Saídas**: Arquivo com os valores ordenados.
 
 Como sugestão, construa o programa de modo que os valores de entrada sejam lidos da linha de comando. Por exemplo:
 
 ```shell
-./divideMat 1000 16 matriz.dat
+./mergesort 4 arq1.dat arq2.dat arq3.dat –o saida.dat
 ```
 
 Onde:
-*	`./divideMat` é o nome do programa; 
-*	`1000` é a dimensão da matriz (1000 x 1000);  
-*	`16` é o número de threads; e 
-*	`matriz.dat` é o arquivo que contém os dados da matriz.
+*	`./mergesort` é o nome do programa; 
+*	`4` é o número de threads;
+* `arq1.dat arq2.dat arq3.dat`são os arquivos com dados de entrada; e 
+*	`saida.dat` é o arquivo que contém os dados de saída.
 
 ### Detalhamento dos produtos do projeto
 Os produtos que devem ser entregues como resultado do projeto são os seguintes:
