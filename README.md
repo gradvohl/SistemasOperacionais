@@ -40,3 +40,6 @@ A falta de qualquer um dos itens acarretará em nota zero nesse componente de av
 A breve descrição dos projetos está a seguir. Clique nos projetos para ir direto às respectivas descrições:
 * [Projeto 1](Projeto1.md): "Merge and sort".
 * [Projeto 2](Projeto2.md): "Build matrix".
+
+# Discussão sobre a alicação de Matrizes
+:bulb:No site [alocaMatrizes](https://gradvohl.github.io/alocaMatrizes), há uma breve discussão sobre estratégias para alocação de matrizes em programas na linguagem C. Recomenda-se a leitura atenta :eyes:.
