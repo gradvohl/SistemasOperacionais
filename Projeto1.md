@@ -24,7 +24,7 @@ Onde:
 *	`./mergesort` é o nome do programa; 
 *	`4` é o número de threads;
 * `arq1.dat arq2.dat arq3.dat`são os arquivos com dados de entrada; e 
-*	`saida.dat` é o arquivo que contém os dados de saída.
+*	`-o saida.dat` é o arquivo que contém os dados de saída.
 
 ### Detalhamento dos produtos do projeto
 Os produtos que devem ser entregues como resultado do projeto são os seguintes:
